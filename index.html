@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header Section -->
+    <header class="bg-blue-500 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl">HR Dashboard</h1>
+            <nav>
+                <a href="#jobs" class="mr-4">Job Postings</a>
+                <a href="#leave" class="mr-4">Leave Management</a>
+                <a href="#candidate" class="mr-4">Candidate Communication</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <div class="container mx-auto mt-8">
+
+        <!-- Recruitment Management Section -->
+        <section id="jobs" class="mb-8">
+            <h2 class="text-xl font-semibold mb-4">Job Postings</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Job Posting Card -->
+                <div class="bg-white p-4 shadow-md rounded-md">
+                    <h3 class="text-lg font-medium">Software Engineer</h3>
+                    <p class="text-gray-600">Develop and maintain web applications using modern technologies.</p>
+                    <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded">View Candidates</button>
+                </div>
+
+                <div class="bg-white p-4 shadow-md rounded-md">
+                    <h3 class="text-lg font-medium">HR Manager</h3>
+                    <p class="text-gray-600">Oversee recruitment, employee relations, and leave management.</p>
+                    <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded">View Candidates</button>
+                </div>
+
+                <div class="bg-white p-4 shadow-md rounded-md">
+                    <h3 class="text-lg font-medium">Marketing Specialist</h3>
+                    <p class="text-gray-600">Plan and execute marketing campaigns to boost company visibility.</p>
+                    <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded">View Candidates</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Leave Management Section -->
+        <section id="leave" class="mb-8">
+            <h2 class="text-xl font-semibold mb-4">Leave Requests</h2>
+            <table class="table-auto w-full bg-white shadow-md rounded-md">
+                <thead>
+                    <tr>
+                        <th class="p-4 border">Employee</th>
+                        <th class="p-4 border">Leave Type</th>
+                        <th class="p-4 border">Status</th>
+                        <th class="p-4 border">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="p-4 border">John Doe</td>
+                        <td class="p-4 border">Sick Leave</td>
+                        <td class="p-4 border">Pending</td>
+                        <td class="p-4 border">
+                            <button class="bg-green-500 text-white px-4 py-2 rounded">Approve</button>
+                            <button class="bg-red-500 text-white px-4 py-2 rounded ml-2">Reject</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="p-4 border">Jane Smith</td>
+                        <td class="p-4 border">Annual Leave</td>
+                        <td class="p-4 border">Approved</td>
+                        <td class="p-4 border">
+                            <button class="bg-green-500 text-white px-4 py-2 rounded" disabled>Approved</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="p-4 border">Alice Brown</td>
+                        <td class="p-4 border">Maternity Leave</td>
+                        <td class="p-4 border">Pending</td>
+                        <td class="p-4 border">
+                            <button class="bg-green-500 text-white px-4 py-2 rounded">Approve</button>
+                            <button class="bg-red-500 text-white px-4 py-2 rounded ml-2">Reject</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Candidate Communication Section -->
+        <section id="candidate" class="mb-8">
+            <h2 class="text-xl font-semibold mb-4">Candidate Communication</h2>
+            <div class="bg-white p-4 shadow-md rounded-md">
+                <h3 class="font-medium">Scheduled Interviews</h3>
+                <ul class="mt-4">
+                    <li class="mb-4">
+                        <strong>Software Engineer Interview:</strong> John Doe - 10th March, 10:00 AM
+                        <br>
+                        <button class="mt-2 bg-blue-500 text-white px-4 py-2 rounded">Send Email</button>
+                    </li>
+                    <li class="mb-4">
+                        <strong>HR Manager Interview:</strong> Jane Smith - 12th March, 2:00 PM
+                        <br>
+                        <button class="mt-2 bg-blue-500 text-white px-4 py-2 rounded">Send Email</button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="bg-blue-500 text-white p-4 mt-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2026 HR Automation Dashboard</p>
+        </div>
+    </footer>
+
+</body>
+</html>
