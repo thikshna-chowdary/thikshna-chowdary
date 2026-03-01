@@ -5,6 +5,9 @@ Team Lead : M Thikshna Chowdary
 
 Team Member : Harini Kollolli
 
+College Name : Ashoka Women's Engineering College
+
+
 NETRIK TRACK 1 - AI HR WORKFLOW AGENT
 1. Problem Understanding
 
